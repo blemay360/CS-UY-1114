@@ -1,0 +1,29 @@
+Stuff you already know:
+
+> greater than?
+< less than?
+== equal to?
+= is equal to
+>= greater than or equal to?
+<= less than or equal to?
+!= not equal to?
+
+not() unary operator, reverses input
+and() unary operator, both have to be true, same as &&
+or() unary operator, either have to be true, same as ||
+
+x<y<x => (x<y)and(y<z) first one gets sketchy outside of python, maybe, so use second
+
+Lexographic comparison:
+Used for comparing strings letter by letter.
+"Daniel"<"David"
+Compares D and D=same
+Compares a and a=same
+Compares n and v=n comes before v, so Daniel is less
+
+Back to stuff you know:
+
+if statements exist
+they can be nested
+also else statements exist
+as do elif
