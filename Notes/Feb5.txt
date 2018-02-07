@@ -1,0 +1,38 @@
+id function:
+id(x)
+Provides id of a variable (instead of printing the value of a variable, it will print the location of the variable (as in the physical location of the variable in main memory)
+Ex.
+[
+x=5
+print(id(x))
+]
+Will return something like 10919552, not 5
+
+To not add a new line character when printing, use end=""
+Ex.
+[
+print(string,end="");
+]
+Will return the string only. Doing this on two lines will print the same string twice, on the same line, with no spaces
+Commas can be used to print a bunch of stuff at once. Python will give spaces between everything unless sep='' is tossed at end. The useful thing compared to using + is that variable types don't matter
+
+Compound assignemt:
+This is the whole x+=1 thing
+You know this but remember that compound assignment is done last.
+Ex.
+[
+x=6
+x=x/1+1
+]
+x is 7
+[
+x=6
+x/=1+1
+]
+x is 3
+
+Random library
+random.random() gives a random number from 0 to 1 
+(not really random, it's pseudo-random. Given the same seed, the random numbers will be the same. But we have the same probability of getting any number, which is good) 
+random.randint(a,b) will return a pseudo-random integer between and including a and b
+random.seed(a=int) will seed the random number generator with int

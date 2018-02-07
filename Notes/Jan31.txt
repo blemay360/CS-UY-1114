@@ -1,0 +1,11 @@
+Python math:
+x-y = Subtraction
+x*y = Multiplication
+x**y= Exponents (x to the power of y)
+x/y = Division (returns a float)
+x//4= Division (returns an truncated int)
+x%y = Modulo (returns a remainder)
+
+The math module is a thing. Legit just look it up as needed
+Other libraries also exist. Who knew?
+Turtle can draw stuff in a new window, and will be needed for a lab
