@@ -1,0 +1,34 @@
+String stuff:
+
+ord(D)
+=>returns 68, the location of 'D' on the unicode table
+	Reminder: unicode and ASCII tables are same for first 127 characters
+chr(68)
+=>returns D
+
+String extraction:
+string_name[start:end:step]
+
+string_name.find('A',instance)
+instance can be left off and it will be assumed to be 0
+if instance == 1; it will output location of second A
+
+string_name.upper()
+string_name.lower()
+Makes whole string uppercase or lowercase
+
+string_name.capitalize()
+=>capitalizes first character
+
+string_name.count("expression")
+=>tells how many instances of 'expression' are in string_name
+
+Palindrome test:
+word==word[::-1]
+=>does the forward facing word match the backwards facing word
+
+There are a whole bunch of functions following the pattern of:
+string_name.is*()
+=> isnum, is___,...
+
+

@@ -1,0 +1,5 @@
+string=input("Enter an odd length string: ")
+middleNum=(len(string) // 2)
+print("Middle character: "+string[middleNum])
+print("First half: "+string[0:middleNum])
+print("Second half: "+string[middleNum+1:len(string)])
