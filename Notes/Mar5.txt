@@ -1,0 +1,38 @@
+rot13 => add 13 to every letter
+	 this is neat because with 26 letters, the encoding algorithm and decrypting algorithm are the same
+ex.)
+line = input("What is your string?")
+output=''
+for c in line:
+	if c.isupper():
+		output+=chr((ord(c)-ord('A')+13)%26+ord('A'))
+	elif c.islower():
+		output+=chr((ord(c)-ord('a')+13)%26+ord('a'))
+	else:
+		output+=c
+print(output)
+
+
+Program for printing complimentary DNA pairs in groups of 4
+
+base=input("Please enter base pairs: ")
+complimentary=''
+for i in range(len(base)):
+     if i>0 and i%4==0:
+        complimentary+=' ' 
+     c = base[i]
+     c=c.lower()
+     if (c == 'g'):
+        complimentary+='C'
+     elif (c == 'c'):
+        complimentary+='G'
+     elif (c == 'a'):
+        complimentary+='T'
+     elif (c == 't'):
+     	complimentary+='A'
+     else:
+          print("Break out the Head & Shoulders")
+          break
+ print(complimentary)
+
+
