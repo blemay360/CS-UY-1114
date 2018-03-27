@@ -1,0 +1,30 @@
+Python is basically a script:
+Start at beginning, go to end
+
+But it also has functions
+Python doesn't require a main() function like other languages, but it can still be usefull
+
+Syntax:
+def main(parameters):
+	code block;
+
+if __name__=="__main__":
+	main();
+
+Put everything under main() and call main with the if statement above
+As to why the if statement is necessary, who knows
+
+Print vs Return
+Print prints to screen
+Return delivers a variable back to whatever called it
+
+Default values
+If not provided a parameter, one will be assigned if the following syntax is followed:
+
+def func(val1=default_val1, val2=default_val2):
+	code stuff;
+
+func(); //takes both default values
+func(var); //takes value of var as val1 instead of default_val1
+func(var, vary); //takes value of var as var2 and vary as var2
+func(val2=var);	//takes value of var as val2
