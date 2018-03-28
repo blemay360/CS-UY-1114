@@ -1,0 +1,55 @@
+Lists are a thing. Functionally the same as arrays, I think python just calls them lists for kicks
+Arrays start at 0
+len() can find the length of a list
+Lists in python can contain heterogeneous elements, which is neat
+
+listname.append(var) will append the variable var onto the end of the list listname
+Lists are mutable (can be changed)
+
+Setting one list equal to another will tie them together (changing one will change the other, even if the other isn't touched)
+
+listname.sort() will sort list
+	numerical lists will be sorted in ascending order
+newlist=listname.copy() will make a copy of listname and call it newlist
+	This is useful because newlist isn't tied to the original list called listname
+
+Two ways to iterate through a list:
+	1. 
+	for i in list:
+		//code
+	Only can be used to access elements of the list, not to change them
+	2.
+	for i in range(len(list)):
+		//code
+	Can be used to access or change elements of the list
+
+Lists are heterogeneous, so various variable types can be stitched together to form an abomination
+	[2, 2.5, 'string']
+
+Can do a list inside of a list
+	list[1][0] refers to the first element of the second list
+	Ex.)
+	list=[[1,2,3],[4,5,6]]
+	list[0][1] == 2
+
+listname.insert(index, value) will insert value before index
+	index=0 will insert into the beginning of the list
+listname.remove(value) will remove the first instance of value
+listname.pop(index) will remove the last value of the list
+	If given a value for index, it will remove that element
+	It will also return the element it got rid of, which is nice
+listname.index(value) will return the index of value in the list
+	Returns an error if value isn't in the list
+listname.count(value) counts the number of times value appears in list
+	Use this to make sure value is in a list before using .index() so it doesn't crash
+value in listname 
+	Returns a boolean of whether value is in list or not
+	Doesn't propogate through list, so have to use a for loop or something for that
+listname.clear()
+	Clears a list
+listname.extend()
+	Adds onto the end, same as append, but extend will take a list, and put the elements onto the end of the list instead of adding the whole list onto the end of the list
+
+Negative indexing works on lists too
+	list[-1] is the last element
+	lsit[::-1] reverses the list
