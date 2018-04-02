@@ -1,0 +1,28 @@
+Lists are mutable => passing a list to a function that changes it changes the original too
+
+Tuples are immutable
+('This','is','A','tuple')
+It uses parathenses instead of brackets
+However, it's the comma that makes it a tuple, not the parentheses
+tuples can contain lists, just as lists can contain lists
+Interesting note, lists can be changed inside tuples
+Elements of tuples can be changed if they are mutable
+Mainly just used for temp stuff
+
+def getTuple():
+	return a,b,c; //Returns a tuple with a,b,c
+x,y,z=getTuple(); //Sets x,y,z to a tuple from a 
+
+Sorting algorithms:
+For example, imagine sorting shortest to tallest
+
+Selection sort:
+Selection sort will go through your entire list, finding the shortest element, and putting it at index 0, swapping whatever was at 0 with the shortest element, and moving on to index 1=>n, then 2=>n, and continuing i=>n until done
+	This isn't great for performance, but it's easy to understand
+
+
+Binary Search:
+When looking at a sorted list for a certain value, just start in the middle
+From there, you can evaluate whether the middle value is higher or lower than the value you're searching for, and eliminate half the list
+Continue until value is found
+This is very efficient, and will find the value in log base 2 of the number of elements in the list
