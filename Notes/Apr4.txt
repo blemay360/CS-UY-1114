@@ -1,0 +1,11 @@
+Files
+
+2 types of files
+	1.Ones you read from
+	2.Ones you write to
+
+Syntax
+	f = open("filename.txt","w"); #opens filename.txt for writing
+		#if the above line is run and filename.txt already exists, it will delete the old one and make a new filename.txt
+		#changing w to a will add stuff onto it, but don't do it in this course
+	print("Hello World", file=f); #writes into filename.txt
