@@ -1,0 +1,25 @@
+Reading from a file:
+
+If outputting to a file that doesn't exist, python will create it
+If reading from a file that doesn't exist, shit will crash
+So probably a good idea to test if it exists before trying to read from it
+
+Ex.)
+import os;
+
+def main():
+	filename = input("What is the name of the file? ");
+	while not os.path.exists(filename): #tests if the file is there or not
+		print("BAD FILENAME");
+		filename = input("What is the name of the file? ");
+	
+	inFile = open(filename,"r");
+	line = inFile.readline(); #gets one line of the file
+
+	for line in inFile: #loops for every line in the file
+		#do some stuff here
+
+
+Important thing to note:
+	Working with files, the next operation picks up where the last one left off
+	For example, reading one line, then setting up a loop to read all lines, will result in the first line not being covered in the loop for all lines
