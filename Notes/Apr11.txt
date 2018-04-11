@@ -1,0 +1,54 @@
+Exceptions:
+Ways to handle an error
+Ex.)
+
+try:
+	#something that might give an error
+except ValueError:
+	print("You done messed up");
+	return;
+#rest of program
+
+ppm file format:
+bitmap
+Stores pictures by individual pixel colors in rgb
+A color image file
+
+Can be turned into a pgm
+
+pgm file format:
+same bitmap type thing, but greyscale
+
+Program to turn ppm to pgm:
+import os;
+
+def open_input_file():
+	filename = input("Enter the name of your ppm file: ");
+	while not os.path.exists(filename);
+		print("Bad filename!");
+		filename=input("Enter the name of your ppm file: ");
+	return filename;
+
+def main():
+	filename = open_input_file();
+	in_file=open(filename, 'r');
+	optfuilename = filename[:-4]+".pgm";
+	outfile= open(outfilename, "w");
+
+	print("F2", file=out_file);
+	in_file.readline(); #throw away the P3
+	header = in_file.readline(); #width and height;
+	print(header, file=out_file);
+
+	header = in_file.readline(); #maxvalue
+	print(header, file=out_file);
+
+	for line in in_line:
+		parts=line.split();
+		line_len=len(parts);
+		for i in range(line_len//3):
+			tup = (int(parts[i*3]), int(parts[i*3+1]), int(parts[i*3+2]));
+			print(convert_tuple(tup), end=' ', file=out_file);
+		print(file=out_fil); #prints a return character
+
+main();
