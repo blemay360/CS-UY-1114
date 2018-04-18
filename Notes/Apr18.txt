@@ -1,0 +1,13 @@
+Error:
+To raise an error, use this syntax
+raise NameOfError("Error message goes here");
+
+__init__ runs automatically at the beginning of a class
+__repr__ gives a representation for printing
+__add__ prebuilt python function for adding two items
+
+	def __add__(self, other):
+		return Point(self.__x+other.__x, self.__y+other.__y);
+		#Redefines + for items of this class to mean the line above
+
+

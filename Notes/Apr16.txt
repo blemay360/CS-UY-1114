@@ -1,0 +1,73 @@
+Object Oriented Programming
+(as opposed to functionally or procedural code)
+
+Note:
+Don't store variables that'll change
+Ex: Don't store age, store birthday
+
+Object oriented programming has a focus on classes and objects
+Classes are like blueprints that are used to create many objects
+
+In python, objects are always passed. (self in ex below)
+
+A function called __init__ will always be called automatically
+
+Ex.)
+
+class Person:
+	def __init__(self,name="",num=""):
+		self.__name=name;
+		self.__phone=num;
+		self.__spouse=None;
+
+	def setName(self,newname):
+		self.__name = newname;
+	def getName(self):
+		return self.__name;
+	def setPhone(self,num);
+		self.__phone = num;
+	def getPhone(self):
+		return self.__phone;
+	def isMarried(self):
+		if self.__spouse==None:
+			return False;
+		else:
+			return True;
+	def marry(self,other):
+		if (self.isMarried() or other.isMarried()):
+			return False;
+		self.__spouse=other;
+		other.__spouse=self;
+		return True;
+	def getSpouseName(self):
+		if self.__spouse==None:
+			return "Not Married";
+		else:
+			return self.__spouse.__name;
+
+class PhoneBook:
+	def __init__(self):
+		self.__book=[];
+	
+	def addPerson(self,per):
+		self.__book.append(per);
+	def findNum(self,name):
+		for item in self.__book:
+			if item.getname()==name:
+				return item.getPhone();
+		return "";
+
+def func(per):
+	print(per.getName());
+	print(p.getPhone());
+
+def main():
+	p = Person();
+	p.setName("John");
+	p.setPhone("718-260-3657");
+	p2 = Person("Jane", "212-222-5555");
+#	func(p);
+	p.marry(p2);
+	print(p2.getSpouseName());
+
+main();
