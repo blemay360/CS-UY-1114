@@ -1,0 +1,16 @@
+Dictionaries:
+List/Array, but numbered differently
+Use square brackets
+
+d['Name']=100;
+
+Correlates the name 'Name' with the value 100
+return(d['Name']); #returns the value 100
+
+The name is referred to as a key
+
+dictionary[key]=value;
+
+key has to be unique, value doesn't
+
+Don't have to append, just need to refer to a new key in definition

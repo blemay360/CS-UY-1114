@@ -1,0 +1,17 @@
+More stuff on dictionaries:
+Usually should use simple stuff for keys: string, int, float..
+Not objects or lists or stuff
+Objects, however, are good for more complicated stuff
+
+reminder:
+d={}; #To initialize a dictionary
+d['Daniel']=100; #To assign a value to a new key
+
+''/"" are strings
+[] are lists
+
+d.keys gives us all the keys in dictionary
+for keys in d.keys:
+	#iterate over all keys in dictionary d
+
+Questions 47,48,49 from the textbook chapters on lists and tuples
