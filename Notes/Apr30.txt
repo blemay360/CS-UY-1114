@@ -1,0 +1,1 @@
+In a class, .__ makes a variable/object thing private
